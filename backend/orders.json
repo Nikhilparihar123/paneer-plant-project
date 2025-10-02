@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Rohit Sharma",
+    "phone": "+919876543210",
+    "address": "Agra, Uttar Pradesh",
+    "product": "Paneer - 5 Kg",
+    "paymentMethod": "Cash on Delivery",
+    "date": "2025-09-30T10:15:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Anjali Verma",
+    "phone": "+919123456789",
+    "address": "Mathura, Uttar Pradesh",
+    "product": "Milk - 10 Litre",
+    "paymentMethod": "UPI",
+    "date": "2025-09-30T11:05:00Z"
+  }
+]

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Place Your Order - Paneer Plant</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Paneer Plant Logo" />
+        <h1>Paneer Plant</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="order.html" class="active">Order</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Order Section -->
+  <section class="order-section container">
+    <h2>Place Your Order</h2>
+    <p>Please fill in the details below to order our fresh products.</p>
+
+    <form id="orderForm" class="order-form">
+      <!-- Customer Info -->
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" required />
+      </div>
+
+      <div class="form-group">
+        <label for="address">Delivery Address *</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter complete delivery address" required></textarea>
+      </div>
+
+      <!-- Product Selection -->
+      <div class="form-group">
+        <label for="product">Select Product *</label>
+        <select id="product" name="product" required>
+          <option value="">-- Choose a product --</option>
+          <option value="Paneer">Fresh Paneer (1kg)</option>
+          <option value="Milk">Pure Milk (1L)</option>
+          <option value="Curd">Curd (500g)</option>
+          <option value="Ghee">Pure Ghee (500ml)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Quantity *</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+      </div>
+
+      <!-- Payment Options -->
+      <div class="form-group">
+        <label>Payment Method *</label>
+        <div class="payment-options">
+          <label><input type="radio" name="payment" value="Cash" required /> Cash on Delivery</label>
+          <label><input type="radio" name="payment" value="UPI" /> UPI</label>
+          <label><input type="radio" name="payment" value="Online" /> Online Payment</label>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn">Place Order</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Paneer Plant | Fresh & Pure Dairy</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
